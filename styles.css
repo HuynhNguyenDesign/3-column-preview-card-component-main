@@ -29,6 +29,23 @@ main {
     flex-direction: column;
 }
 
+@media (min-width: 376px) {
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        width: 1024px;
+        flex-direction: row;
+    }
+}
+
 section {
     padding: 6rem 3rem;
 }
@@ -73,6 +90,12 @@ section>a {
     border-radius: 0.5rem 0.5rem 0 0;
 }
 
+@media (min-width: 376px) {
+    #sedan {
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+}
+
 #sedan>a {
     color: hsl(31, 77%, 52%);
 }
@@ -102,6 +125,12 @@ section>a {
 #luxury {
     background-color: hsl(179, 100%, 13%);
     border-radius: 0 0 0.5rem 0.5rem;
+}
+
+@media (min-width: 376px) {
+    #luxury {
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
 }
 
 #luxury>a {
